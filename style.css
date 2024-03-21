@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Anta",Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    background-color:rgba(143, 1, 1, 0.801);
+    padding: 0px 30px;
+    font-family: "Anta",Arial, Helvetica, sans-serif;
+}
+
+.header-container
+{
+    padding: 10px 30px;
+}
+
+.logo-container
+{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.logo-img 
+{
+  width: 30px;
+}
+
+.logo-name 
+{
+    font-size: 30px;
+    margin-left: 5px;
+    color: white;
+}
+
+.search-container
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.search-container img 
+{
+    width: 17px;
+}
+
+.search-input
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex:1;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border:none;
+    outline: none
+};
+
+.search-container .search-bar-icon
+{
+    position: absolute;
+    top:14px;
+    cursor: pointer;
+    left: 50px;
+    visibility: hidden;
+}
+
+.search-container .search-close-icon 
+{
+    position: absolute;
+    top:14px;
+    cursor: pointer;
+    right: 60px;
+    visibility: hidden;
+}
+
+.search-icon 
+{
+    position: absolute;
+    top:14px;
+    cursor: pointer;
+    left: 10px;
+}
+
+.search-container .search-close-icon-visible
+{
+    visibility: visible;
+}
+
+.sort-container
+{
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.sort
+{
+    width: 42px;
+    height: 42px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sort img 
+{
+    width: 15px;
+}
+
+.filter-container
+{
+    position: relative;
+    display: none;
+}
+
+.filter-container p 
+{
+    margin:10px 0px;
+}
+
+.filter-container .input-container
+{
+    margin-bottom: 10px;
+}
+
+.show-filter-container 
+{
+    display: inline;
+    position: absolute;
+    right: 0px;
+    top:50px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    width: 150px;
+    padding: 10px 20px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.562);
+    background-color:red;
+}
+
+.pokemon-container
+{
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+}
+
+.list
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.list-item
+{
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.list-item .number-wrap
+{
+    position: absolute;
+    top:5px;
+    right: 2px;
+}
+
+
+.list-item .img-wrap
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.list-item .img-wrap img
+{
+    width: 150px;
+    height: 150px;
+}
+
+.list-item .name-wrap
+{
+    border-radius: 7px;
+    background-color: lightgray;
+    padding: 30px 30px 29px 39px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: -25px;
+}
+
+.not-found-message
+{
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (max-width:600px)
+{
+    .pokemon-container
+    {
+        padding: 20px 20px;
+    }
+
+    .list 
+    {
+        gap: 40px;
+    }
+
+    .search-input 
+    {
+        padding: 0px 10px;
+    }
+}
+
+
+@media screen and (max-width : 500px)
+{
+    .search-icon 
+    {
+        display: none;
+    }
+}

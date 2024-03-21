@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Images/Poké_Ball_icon.svg.png">
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo-container">
+            <img src="./Images/pokeball.svg" class="logo-img">
+            <p class="logo-name">Pokemon</p>
+        </div>
+
+        <div class="search-container">
+            <img src="./Images/search.svg" class="search-icon">
+            <input type="text" class="search-input" placeholder="Search...">
+            <img src="./Images/cross.svg" class="search-close-icon" alt="cross-icon">
+
+                <div class="sort-container">
+                    <div class="sort">
+                        <img src="./Images/sorting.svg" class="sort-icon">
+                    </div>
+
+                    <div class="filter-container">
+                        <p>Sort By : </p>
+                        <div class="filter">
+                            <div class="input-container">
+                                <input type="radio" id="number" class="number-filter" value="number" name="filter" checked>
+                                <label for="number">Number</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="radio" id="name" class="name-filter" value="name" name="filter">
+                                <label for="name">Name</label>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="pokemon-container">
+        <div class="pokemon">
+            <div class="list">
+                
+            </div>
+            <div class="not-found-message">Not Found Message</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

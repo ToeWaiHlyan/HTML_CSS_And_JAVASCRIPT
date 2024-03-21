@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Anta",Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    font-family: "Anta",Arial, Helvetica, sans-serif;
+    background-color: #F29600;
+}
+
+.detail-header
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.back-to-home-icon
+{
+    color: white;
+    cursor: pointer;
+}
+
+.pokemon-name
+{
+    margin-left: 10px;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.pokemon-detail-container
+{
+    margin-top: 50px;
+}
+
+.pokemon-image
+{
+    display: flex;
+    justify-content: center;
+}
+
+.chevron_left,.chevron_right
+{
+    cursor: pointer;
+}
+
+.pokemon-id 
+{
+    margin-top:4px;
+    font-size: 18px;
+}
+
+.pokemon-image .pokemon-img 
+{
+    max-width: 300px;
+    max-height:  300px;
+}
+
+.pokemon-detail 
+{
+    background-color: white;
+    max-width: 900px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-top: -40px;
+}
+
+.power-container
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.power-container p 
+{
+    padding: 7px;
+    margin: 0px 5px;
+    border-radius: 20px;
+    background-color: #F29600ed;
+    color: white;
+    font-weight:bold;
+    font-size: 15px;
+}
+
+
+.about
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about h1 
+{
+    margin-bottom: 10px;
+}
+
+.pokemon-about 
+{
+    display: flex;
+}
+
+.type 
+{
+    padding: 7px;
+    margin: 0px 5px;
+    border-radius: 20px;
+    background-color: #F29600ed;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.about-container
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+
+
+
+.left-section,.middle-section
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.right-section
+{
+    position: relative;
+}
+
+.left-section .weight 
+{
+    position: absolute;
+    top:100px;
+    left: 30px;
+}
+
+.middle-section .height 
+{
+    position: absolute;
+    top:100px;
+    left: 20px;
+}
+
+.right-section .move
+{
+    color: blue;
+    position: absolute;
+    top:100px;
+    left: 20px;
+}
+
+.left-section img,
+.middle-section img,
+.right-section img 
+{
+    margin-right: 15px;
+}
+
+.middle-section img 
+{
+    transform: rotate(90deg);
+}
+
+.line
+{
+    width: 1px;
+    height: 100px;
+    background-color: lightgray;
+}
+
+.pokemon-ability .ability 
+{
+    margin: 20px 0px;
+}
+
+.pokemon-ability .ability 
+{
+    text-align: center;
+}
+
+.pokemon-power-explain 
+{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.base-stats
+{
+    margin-top: 50px;
+}
+
+.base-stats h1 
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.stats-container
+{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hp-container,
+.attack-container,
+.defense-container,
+.special-attack-container,
+.special-defense-container,
+.speed-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hp-container .stats,
+.attack-container  .stats,
+.defense-container  .stats,
+.special-attack-container  .stats,
+.special-defense-container .stats,
+.speed-container  .stats
+{
+    color: #F29600;
+    text-align: right;
+    padding-right: 10px;
+    width: 150px;
+}
+
+.hp-container p,
+.attack-container p,
+.defense-container p,
+.special-attack-container p,
+.special-defense-container p,
+.speed-container p
+{
+    text-align: right;
+    padding-right: 10px;
+    min-width: 50px;
+}
+
+.base-stats-line 
+{
+    width: 1px;
+    height: 20px;
+    background-color: lightgray;
+}
+
+
+.hp-container #progress-bar,
+.attack-container #progress-bar,
+.defense-container #progress-bar,
+.special-attack-container #progress-bar,
+.special-defense-container #progress-bar,
+.speed-container #progress-bar
+{
+    height: 8px;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 100px;
+    flex: 1;
+}
+
+@media screen and (max-width:900px)
+{
+    .pokemon-image .pokemon-img 
+    {
+        width: 150px;
+        height: auto;
+    }
+
+    .pokemon-power-explain 
+    {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:320px)
+{
+    .pokemon-image .pokemon-img 
+    {
+        width: 100px;
+        height: auto;
+    }
+
+    .left-section .weight
+    {
+        position: absolute;
+        top:100px;
+        left: 20px;
+    }
+
+    .right-section .height
+    {
+        position: absolute;
+        top:100px;
+        left: 20px;
+    }
+
+    .line 
+    {
+        width: 1px;
+        height: 90px;
+        background-color: lightgray;
+    }
+    
+    .stats-container
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .pokemon-name
+    {
+        font-size: 20px;
+    }
+
+    body
+    {
+        font-size: 12px;
+    }
+
+    .pokemon-about p 
+    {
+        font-size: 12px;
+    }
+    
+    .stats-container .stats
+    {
+        width: 20px;
+    }
+
+    .hp-container p, .attack-container p, .defense-container p, .special-attack-container p, .special-defense-container p, .speed-container p 
+    {
+        text-align: right;
+        padding-right: 10px;
+        min-width: 50px;
+    }
+    
+    .progress-bar 
+    {
+        padding: 1px;
+    }
+}
+
+@media  screen and (max-width : 400px) 
+{
+
+    body
+    {
+        font-size: 14px;
+    }
+
+    .progress-bar 
+    {
+        padding: 1px;
+    }
+
+    .stats-container .stats
+    {
+        width: 90px;
+    }
+
+    .stats-container
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
