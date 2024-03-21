@@ -138,6 +138,11 @@ function handleSearch()
     {
         notFoundMessage.style.display = 'none';
     }
+
+    if(searchInput.length === 0)
+    {
+        displayPokemon(allPokemons)
+    }
 }
 
 /*Close Icon*/
